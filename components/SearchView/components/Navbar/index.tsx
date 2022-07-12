@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export type NavbarProps = {
   query: string
   setQuery: Dispatch<SetStateAction<string>>
-  transaction: any
+  transition: any
   filter: any
 }
 export function Navbar (props: NavbarProps) {
@@ -15,7 +15,7 @@ export function Navbar (props: NavbarProps) {
           <input placeholder='Pesquise por nome' value={props.query} onChange={(e) => {
             props.setQuery(e.target.value)
 
-            props.transaction(() => {
+            props.transition(() => {
               props.filter(e)
             })
           }}/>

@@ -5,14 +5,14 @@
     flex-direction: row;
     align-items: flex-end;
     width: 93%;
-
     justify-content: space-between;
 
     select {
         width: 200px;
 
+        padding: 10px;
         border-radius: 20px;
-        padding: 5px;
+
 
         :focus {
             outline: none;
@@ -49,15 +49,28 @@
     width: 100%;
 
 
+
 }
 
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        justify-content: center;
+
+
+        width: 100%;
+
         margin: 0;
 
+        select {
+            margin-top: 2rem;
+            padding: 3px;
+        }
+
+        .filterContainer {
+            margin-top: 3rem;
+        }
 
     }
 

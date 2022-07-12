@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: var(--primary);
     width: 65%;
-
+    overflow-y: scroll;
     animation: fadein 2s;
 }
 

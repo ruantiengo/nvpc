@@ -33,7 +33,7 @@ export function SearchView (props: SearchViewProps) {
 
   return (
       <div className={styles.container}>
-          <Navbar query={query} setQuery={setQuery} transaction={startTransition} filter={filter} />
+          <Navbar query={query} setQuery={setQuery} transition={startTransition} filter={filter} />
 
           <Order data={props.userRepos} setData={setRepos} filterLanguages={props.filterLanguages} />
 
